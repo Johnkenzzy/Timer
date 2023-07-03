@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:  100vh;
+    text-align: center;
+    background: url(https://images.unsplash.com/photo-1501139083538-0139583c060f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGltZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80) no-repeat center center / cover;
+    transition: 1s;
+}
+
+body:hover {
+    background: url(https://static.vecteezy.com/system/resources/previews/011/208/814/original/technology-background-analog-clock-time-vector.jpg) no-repeat center center / cover;
+}
+
+#main-container {
+    border: 5px solid #fff;
+    border-radius: 5px;
+    box-shadow: #000;
+    height: 15rem;
+    width: 20rem;
+}
+
+#main-container #header {
+    margin: 0;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: 2px solid #fff;
+    background: #3D4F4B;
+    color: #fff;
+}
+
+#container {
+    padding: 15px;
+}
+
+#timer {
+    padding: 15px 0 25px 0;
+    font-size: 7ch;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.square {
+    border-radius: 5px;
+    transition: transform 1s;
+    
+    &:hover {
+      transform: scale(1.5);
+      background: darkturquoise;
+    }
+}   
+
+#btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.btn {
+    border: 2px solid #fff;
+    padding: 12px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+#play-pause {
+    background: green;
+    color: #fff;
+}
+
+#reset {
+    background: #f00;
+    color: #fff;
+}
